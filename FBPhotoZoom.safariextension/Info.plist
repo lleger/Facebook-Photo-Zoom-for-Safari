@@ -49,6 +49,8 @@
 			<string>Some</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://github.com/lleger/Facebook-Photo-Zoom-for-Safari/raw/master/UpdateManifest.plist</string>
 	<key>Website</key>
 	<string>http://loganleger.com</string>
 </dict>
