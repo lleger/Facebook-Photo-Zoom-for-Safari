@@ -1,4 +1,5 @@
 $(document).ready(function () {
+		console.log("loaded");
     $("a.uiPhotoThumb img, img.uiProfilePhoto, img.UIProfileImage, img#profile_pic, img.UIPhotoGrid_Image, a.UIImageBlock_Image img, img.buddy_photo, a.chat_info_pic_link img").hover(function (e) {
         var image = $(this).attr("src").replace(/_(q|s).jpg/i, "_n.jpg");
         $("body").prepend('<div id="fbzoom"><img src="' + image + '" /></div>');
