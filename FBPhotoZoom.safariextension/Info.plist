@@ -20,7 +20,7 @@
 	<dict>
 		<key>Scripts</key>
 		<dict>
-			<key>Start</key>
+			<key>End</key>
 			<array>
 				<string>jquery.js</string>
 				<string>zoom.js</string>
