@@ -13,13 +13,16 @@ function fbzoom() {
 					image = image.replace(/\/(q|s)/, "/n");
 				}
 				var title = $(this).attr("alt") || $(this).attr("title");
-        $("body").prepend('<div id="fbzoom"><img src="' + image + '" /></div>');
-				if (title.length > 0) {
-					$("#fbzoom").append("<p>"+title+"</p>");
-				}
-				position_fbzoom(e);
+				hover_timer = setTimeout(function() {
+					$("body").prepend('<div id="fbzoom"><img src="' + image + '" /></div>');
+					if (title.length > 0) {
+						$("#fbzoom").append("<p>"+title+"</p>");
+					}
+					position_fbzoom(e);
+				},250);
     }, function () {
         $("#fbzoom").remove();
+				clearTimeout(hover_timer);
     });
     $("img").mousemove(function (e) {
 				position_fbzoom(e);
